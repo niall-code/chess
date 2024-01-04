@@ -6,24 +6,36 @@
   margin: 0;
 }
 
-/* No underline on links */
 a {
   text-decoration: none;
+  color: black;
 }
 
 /* Header */
 
 header {
-  background-color: white;
+  position: fixed;
+  width: 100%;
 }
 
 /* Site logo */
 #logo {
-  color: black;
   font-size: 3rem;
   margin-left: 15px;
 }
 
 #logo-scale {
   font-size: 1.5rem;
+}
+
+/* Main menu */
+#main-menu {
+  font-size: larger;
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  border: ridge;
+  justify-content: center;
+  padding: 10px 0;
+  margin: 15px 20% 15px 15px;
 }
