@@ -16,6 +16,9 @@ a {
 header {
   position: fixed;
   width: 100%;
+  z-index: 5;
+  background-color: white;
+  border-bottom: 0.5px dashed lightgray;
 }
 
 /* Site logo */
@@ -38,4 +41,35 @@ header {
   justify-content: center;
   padding: 10px 0;
   margin: 15px 20% 15px 15px;
+}
+
+/* Main */
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  position: absolute;
+}
+
+/* Chessboard graphic */
+table {
+  margin-top: 200px;
+  margin-left: 15px;
+  border: 2px solid maroon;
+  border-spacing: 0;
+}
+
+td {
+  border: 0.5px solid maroon;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.dark {
+  background-color: sienna;
+}
+
+.light {
+  background-color: linen;
 }
