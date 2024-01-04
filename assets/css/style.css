@@ -19,6 +19,7 @@ header {
   z-index: 5;
   background-color: white;
   border-bottom: 0.5px dashed lightgray;
+  text-align: center;
 }
 
 /* Site logo */
@@ -40,7 +41,7 @@ header {
   border: ridge;
   justify-content: center;
   padding: 10px 0;
-  margin: 15px 20% 15px 15px;
+  margin: 15px 10% 15px 10%;
 }
 
 /* Main */
