@@ -11,6 +11,12 @@ a {
   color: black;
 }
 
+/* Font */
+main,
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Header */
 
 header {
@@ -25,7 +31,6 @@ header {
 /* Site logo */
 #logo {
   font-size: 3rem;
-  margin-left: 15px;
 }
 
 #logo-scale {
@@ -50,6 +55,25 @@ main {
   width: 100%;
   min-height: 100vh;
   position: absolute;
+}
+
+/* Intro on landing page */
+#site-intro {
+  margin-top: 200px;
+  padding: 15px;
+  background: lightblue;
+}
+
+#site-intro > div {
+  text-align: justify;
+}
+
+#site-intro p {
+  margin-top: 5px;
+}
+
+#site-intro p:first-of-type {
+  margin-top: 10px;
 }
 
 /* Chessboard graphic */
