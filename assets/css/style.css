@@ -79,6 +79,16 @@ main {
   margin-top: 10px;
 }
 
+/* Email signup */
+#mail-signup {
+  padding: 15px 0 30px;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+}
+
 /* Chessboard graphic */
 table {
   margin-left: 15px;
@@ -113,10 +123,6 @@ footer {
   width: 100%;
   padding-bottom: 15px;
   text-align: center;
-}
-
-footer h4 {
-  margin-top: 15px;
 }
 
 #links {
