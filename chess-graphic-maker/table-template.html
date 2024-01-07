@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Graphic Maker</title>
+    <link rel="stylesheet" href="tt-styling.css">
+  </head>
+
+  <body>
+
+    <!-- Instructions -->
+    <p>Open a live preview.</p>
+    <p>To place a chess piece on the chessboard:</p>
+    <ol>
+      <li>Nest an <strong>i</strong> element in the appropriate table cell.</li>
+      <li>Give the <strong>i</strong> element a class attribute.</li>
+      <li>Give the class attribute two values:
+        <ul>
+          <li>either <strong>fa-regular</strong> for a white piece or <strong>fa-solid</strong> for a black piece</li>
+          <li>and <strong>fa-chess-<em>piece</em></strong> (replacing <em>piece</em> with the standard name of the wanted piece, i.e., rook, knight, bishop, queen, king, or pawn).</li>
+        </ul>
+      </li>
+    </ol>
+    <p>Screenshot the preview, crop the image, optimise the file, and save it as an asset.</p>
+    <p>It is recommended that you do not save changes to this HTML file.</p>
+    <br>
+
+    <!-- Chessboard graphic template -->
+    <div>
+      <table>
+        <tr> <!-- 8 -->
+          <th>8</th>
+          <td class="light top left"></td> <!-- a -->
+          <td class="dark top"></td> <!-- b -->
+          <td class="light top"></td> <!-- c -->
+          <td class="dark top"></td> <!-- d -->
+          <td class="light top"></td> <!-- e -->
+          <td class="dark top"></td> <!-- f -->
+          <td class="light top"></td> <!-- g -->
+          <td class="dark top right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 7 -->
+          <th>7</th>
+          <td class="dark left"></td> <!-- a -->
+          <td class="light"></td> <!-- b -->
+          <td class="dark"></td> <!-- c -->
+          <td class="light"></td> <!-- d -->
+          <td class="dark"></td> <!-- e -->
+          <td class="light"></td> <!-- f -->
+          <td class="dark"></td> <!-- g -->
+          <td class="light right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 6 -->
+          <th>6</th>
+          <td class="light left"></td> <!-- a -->
+          <td class="dark"></td> <!-- b -->
+          <td class="light"></td> <!-- c -->
+          <td class="dark"></td> <!-- d -->
+          <td class="light"></td> <!-- e -->
+          <td class="dark"></td> <!-- f -->
+          <td class="light"></td> <!-- g -->
+          <td class="dark right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 5 -->
+          <th>5</th>
+          <td class="dark left"></td> <!-- a -->
+          <td class="light"></td> <!-- b -->
+          <td class="dark"></td> <!-- c -->
+          <td class="light"></td> <!-- d -->
+          <td class="dark"></td> <!-- e -->
+          <td class="light"></td> <!-- f -->
+          <td class="dark"></td> <!-- g -->
+          <td class="light right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 4 -->
+          <th>4</th>
+          <td class="light left"></td> <!-- a -->
+          <td class="dark"></td> <!-- b -->
+          <td class="light"></td> <!-- c -->
+          <td class="dark"></td> <!-- d -->
+          <td class="light"></td> <!-- e -->
+          <td class="dark"></td> <!-- f -->
+          <td class="light"></td> <!-- g -->
+          <td class="dark right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 3 -->
+          <th>3</th>
+          <td class="dark left"></td> <!-- a -->
+          <td class="light"></td> <!-- b -->
+          <td class="dark"></td> <!-- c -->
+          <td class="light"></td> <!-- d -->
+          <td class="dark"></td> <!-- e -->
+          <td class="light"></td> <!-- f -->
+          <td class="dark"></td> <!-- g -->
+          <td class="light right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 2 -->
+          <th>2</th>
+          <td class="light left"></td> <!-- a -->
+          <td class="dark"></td> <!-- b -->
+          <td class="light"></td> <!-- c -->
+          <td class="dark"></td> <!-- d -->
+          <td class="light"></td> <!-- e -->
+          <td class="dark"></td> <!-- f -->
+          <td class="light"></td> <!-- g -->
+          <td class="dark right"></td> <!-- h -->
+        </tr>
+        <tr> <!-- 1 -->
+          <th>1</th>
+          <td class="dark bottom left"></td> <!-- a -->
+          <td class="light bottom"></td> <!-- b -->
+          <td class="dark bottom"></td> <!-- c -->
+          <td class="light bottom"></td> <!-- d -->
+          <td class="dark bottom"></td> <!-- e -->
+          <td class="light bottom"></td> <!-- f -->
+          <td class="dark bottom"></td> <!-- g -->
+          <td class="light bottom right"></td> <!-- h -->
+        </tr>
+        <tr>
+          <th></th>
+          <th>a</th>
+          <th>b</th>
+          <th>c</th>
+          <th>d</th>
+          <th>e</th>
+          <th>f</th>
+          <th>g</th>
+          <th>h</th>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/8e8fccab10.js" crossorigin="anonymous"></script>
+
+  </body>
+
+</html>

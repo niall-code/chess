@@ -1,0 +1,57 @@
+/* Image cropping guideline */
+div {
+  border: 1px dotted gray;
+  padding: 15px 15px 10px 10px;
+  display: inline-block;
+}
+
+/* No space between cells */
+table {
+  border-spacing: 0;
+}
+
+/* Coordinates color */
+th {
+  width: 30px;
+  height: 30px;
+  color: maroon;
+}
+
+/* Square size and border */
+td {
+  border: 0.5px solid maroon;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+/* Square colors */
+.dark {
+  background-color: sienna;
+}
+
+.light {
+  background-color: linen;
+}
+
+/* Board edges */
+.top {
+  border-top: 2px solid maroon;
+}
+
+.right {
+  border-right: 2px solid maroon;
+}
+
+.bottom {
+  border-bottom: 2px solid maroon;
+}
+
+.left {
+  border-left: 2px solid maroon;
+}
+
+/* Piece size */
+i {
+  font-size: 1.5rem;
+}
