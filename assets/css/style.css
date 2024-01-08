@@ -92,6 +92,16 @@ input {
   padding: 5px;
 }
 
+/* Openings and Checkmate pages */
+
+img {
+  width: 300px;
+}
+
+#openings p {
+  margin-bottom: 5px;
+}
+
 /* Footer */
 
 footer {
