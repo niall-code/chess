@@ -84,12 +84,28 @@ main {
 
 /* Email signup */
 #mail-signup {
-  padding: 15px 0 30px;
+  margin: 30px 0 15px;
   text-align: center;
 }
 
 input {
   padding: 5px;
+}
+
+.required {
+  color: red;
+}
+
+form > div {
+  margin-top: 10px;
+}
+
+form > div:first-of-type {
+  margin-top: 15px;
+}
+
+.align {
+  visibility: hidden;
 }
 
 /* Openings and Checkmate pages */
@@ -107,14 +123,18 @@ img {
 footer {
   background-color: white;
   width: 100%;
-  padding-bottom: 15px;
+  padding: 15px 0 30px;
   text-align: center;
+}
+
+#links-contain {
+  max-width: 400px;
+  margin: 15px auto 0;
 }
 
 #links {
   display: flex;
   justify-content: space-evenly;
-  align-items: start;
 }
 
 footer i {

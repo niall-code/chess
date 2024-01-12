@@ -37,56 +37,79 @@
     </header>
 
     <main>
+
       <!-- Intro on landing page -->
       <section id="site-intro" aria-labelledby="purpose">
+
         <div>
+
           <h3 id="purpose">What can this site do for you?</h3>
+
           <p>If you've recently started playing chess, you might be wondering how to win more of your games. Chances are, that's how you found this site.</p>
           <p>Winning isn't everything, but feeling unable to win can take the fun out of games!</p>
           <p>That's what this site is about: helping you improve your chess as a means to maximise the <em>fun</em> you get from playing it.</p>
+
         </div>
+
       </section>
 
-      <section id="mail-signup" aria-labelledby="weekly">
-        <h4 id="weekly">'Chess Tip of the Week'<br>mailing list signup</h4>
-        <br>
-        <form action="https://formdump.codeinstitute.net/" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" placeholder="person@service.com" required>
-          <input type="submit">
+      <!-- Mailing list signup form -->
+      <section id="mail-signup">
+
+        <form action="https://formdump.codeinstitute.net/" method="post" aria-labelledby="weekly">
+
+          <h4 id="weekly">Chess Tip of the Week<br>mailing list signup</h4>
+
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+          </div>
+
+          <div>
+            <span class="align">..</span>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="person@service.com" required>
+            <span class="required">*</span>
+          </div>
+
+          <div>
+            <input type="submit">
+          </div>
+
         </form>
+
       </section>
+
     </main>
 
     <footer>
-      <h4>External links</h4>
-      <br>
-      <ul id="links">
-        <li>
-          <a href="https://www.chess.com/" target="_blank" rel="noopener" aria-label="Visit Chess.com (opens in a new tab)">
-            <i class="fa-solid fa-chess-pawn"></i>
-            <br><br>
-            <p>Chess.com</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://lichess.org/" target="_blank" rel="noopener" aria-label="Visit lichess.org (opens in a new tab)">
-            <i class="fa-regular fa-chess-knight"></i>
-            <br><br>
-            lichess.org
-          </a>
-        </li>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/List_of_chess_openings" target="_blank" rel="noopener" aria-label="Visit Wikipedia's list of chess openings (opens in a new tab)">
-            <i class="fa-brands fa-wikipedia-w"></i>
-            <br><br>
-            <p>
-              Openings<br>
-              - Wikipedia
-            </p>
-          </a>
-        </li>
-      </ul>
+
+      <h4>Ready to play?</h4>
+
+      <div id="links-contain">
+
+        <ul id="links">
+
+          <li>
+            <a href="https://www.chess.com/" target="_blank" rel="noopener" aria-label="Visit Chess.com (opens in a new tab)">
+              <i class="fa-solid fa-chess-pawn"></i>
+              <br><br>
+              <p>Chess.com</p>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://lichess.org/" target="_blank" rel="noopener" aria-label="Visit lichess.org (opens in a new tab)">
+              <i class="fa-regular fa-chess-knight"></i>
+              <br><br>
+              lichess.org
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
     </footer>
 
     <!-- Font Awesome kit -->
