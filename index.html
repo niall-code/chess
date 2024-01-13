@@ -20,21 +20,27 @@
   </head>
 
   <body>
-    
+
+    <!-- Header, Has consistency across all pages -->
     <header>
-      <!-- Site logo -->
+
+      <!-- Site logo, Linked to home page -->
       <a href="index.html" aria-label="Go to the home page">
         <h1 id="logo">
+          <!-- Span to target for font sizing -->
           <span id="logo-scale">HOW TO WIN</span>
           <br>
           CHESS
         </h1>
       </a>
       
-      <!-- Main menu -->
+      <!-- Navigation menu -->
       <nav>
+
+        <!-- ID of main-menu in case of other menus being added due to increasing amounts of content -->
         <ul id="main-menu">
           <li>
+            <!-- Current page indicated with bold text -->
             <a href="index.html" aria-label="Go to the home page"><strong>Home</strong></a>
           </li>
           <li>
@@ -44,14 +50,18 @@
             <a href="checkmate.html" aria-label="Go to the checkmate page">Checkmate</a>
           </li>
         </ul>
+
       </nav>
+
     </header>
 
+    <!-- Main content area -->
     <main>
 
-      <!-- Intro on landing page -->
+      <!-- Site introduction section, Given background image by CSS -->
       <section id="site-intro" aria-labelledby="purpose">
 
+        <!-- div to target for background color -->
         <div>
 
           <h3 id="purpose">What can this site do for you?</h3>
@@ -64,22 +74,27 @@
 
       </section>
 
-      <!-- Mailing list signup form -->
-      <section id="mail-signup">
+      <!-- Mailing list signup section -->
+      <section id="mail-signup" aria-labelledby="weekly">
 
-        <form action="https://formdump.codeinstitute.net/" method="post" aria-labelledby="weekly">
+        <h4 id="weekly">Chess Tip of the Week<br>mailing list signup</h4>
 
-          <h4 id="weekly">Chess Tip of the Week<br>mailing list signup</h4>
+        <!-- Signup form -->
+        <form action="https://formdump.codeinstitute.net/" method="post">
 
+          <!-- divs to target for space between form rows -->
           <div>
             <label for="name">Name:</label>
             <input type="text" name="name" id="name" placeholder="Name">
           </div>
 
           <div>
+            <!-- Nudges email input box to align with name input box, Hidden -->
             <span class="align">..</span>
+
             <label for="email">Email:</label>
             <input type="email" name="email" id="email" placeholder="person@service.com" required>
+            <!-- Asterisk signals 'required field' to site user -->
             <span class="required">*</span>
           </div>
 
@@ -93,11 +108,13 @@
 
     </main>
 
+    <!-- Footer, Identical across all pages -->
     <footer>
 
-      <h4>Ready to play?</h4>
+      <!-- External links section -->
+      <section id="links-contain" aria-labelledby="play">
 
-      <div id="links-contain">
+        <h4 id="play">Ready to play?</h4>
 
         <ul id="links">
 
@@ -105,7 +122,7 @@
             <a href="https://www.chess.com/" target="_blank" rel="noopener" aria-label="Visit Chess.com (opens in a new tab)">
               <i class="fa-solid fa-chess-pawn"></i>
               <br><br>
-              <p>Chess.com</p>
+              Chess.com
             </a>
           </li>
 
@@ -119,7 +136,7 @@
 
         </ul>
 
-      </div>
+      </section>
 
     </footer>
 

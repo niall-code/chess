@@ -10,7 +10,7 @@
     <meta name="description" content="Useful information and advice for chess beginners and improvers.">
     <meta name="keywords" content="chess, learn chess, how to play chess, win at chess, chess openings, checkmate patterns, beginner, novice">
 
-    <!-- Title & Favicon -->
+    <!-- Title & Favicon, Page indicated -->
     <title>Checkmate - How to Win Chess</title>
     <link rel="icon" href="assets/images/favicon.ico">
 
@@ -21,18 +21,23 @@
 
   <body>
 
+    <!-- Header, Has consistency across all pages -->
     <header>
-      <!-- Site logo -->
+
+      <!-- Site logo, Links to home page -->
       <a href="index.html" aria-label="Go to the home page">
         <h1 id="logo">
+          <!-- Span to target for font sizing -->
           <span id="logo-scale">HOW TO WIN</span>
           <br>
           CHESS
         </h1>
       </a>
       
-      <!-- Main menu -->
+      <!-- Navigation menu -->
       <nav>
+
+        <!-- ID of main-menu in case of other menus being added due to increasing amounts of content -->
         <ul id="main-menu">
           <li>
             <a href="index.html" aria-label="Go to the home page">Home</a>
@@ -41,56 +46,100 @@
             <a href="openings.html" aria-label="Go to the openings page">Openings</a>
           </li>
           <li>
+            <!-- Current page indicated with bold text -->
             <a href="checkmate.html" aria-label="Go to the checkmate page"><strong>Checkmate</strong></a>
           </li>
         </ul>
+
       </nav>
+
     </header>
 
+    <!-- Main content area -->
     <main>
 
+      <!-- Checkmate patterns content section, Has ID reference list for accessibility -->
       <section id="checkmate" aria-labelledby="ch-title triangle smothered arabian">
         
+        <!-- Section header, Page introduction -->
         <header>
-          <h2 id="ch-title">Checkmate Patterns</h2>
-          <br>
-          <p>In the endgame, time and effort spent finding a way to deliver checkmate can often be reduced by familiarity with checkmate patterns. You don't need to reinvent common positions. In many games, familiar positions from your mental toolkit will do the job just fine.</p>
-          <br>
+
+          <h2 id="ch-title">Checkmate Patterns</h2><br>
+          
+          <p>In the endgame, time and effort spent finding a way to deliver checkmate can often be reduced by familiarity with checkmate patterns. You don't need to reinvent common positions. In many games, familiar positions from your mental toolkit will do the job just fine.</p><br>
+          
         </header>
 
+        <!-- Container div to target for flexbox -->
         <div id="ch-contain">
+
+          <!-- 'Right Triangle Mate' content -->
           <div>
+
             <h3 id="triangle">Right Triangle Mate</h3>
+
+            <!-- Image created using project's chess graphics maker,
+            Incorporates Font Awesome chess piece icons: https://fontawesome.com/search?q=chess&o=r&m=free -->
             <img src="assets/images/triangle.png" alt="Diagram of right triangle checkmate pattern">
+
+            <!-- Explanatory text -->
             <p>Delivering checkmate with two major pieces (rooks and queen) is generally straightforward. However, by the end of the game, you can often find yourself with only one major piece remaining. Fortunately, the assistance of an active king can make up for that.</p>
             <p>In the right triangle mate, white's king (white in this example) shields the three squares in front of black's king, preventing it from leaving the edge of the board. The checkmate is then delivered by the rook.</p>
-            <audio src="assets/audio/triangle.mp3" controls controlslist="nodownload"></audio>
+
+            <!-- Audio of the text -->
+            <audio src="assets/audio/triangle.mp3" controls controlslist="nodownload" aria-label="A voice recording of the Right Triangle Mate text"></audio>
+
           </div>
+
+          <!-- 'Smothered Mate' content -->
           <div>
+
             <h3 id="smothered">Smothered Mate</h3>
+
+            <!-- Image created using project's chess graphics maker,
+            Incorporates Font Awesome chess piece icons: https://fontawesome.com/search?q=chess&o=r&m=free -->
             <img src="assets/images/smothered.png" alt="Diagram of smothered mate checkmate pattern">
+
+            <!-- Explanatory text -->
             <p>Given the right circumstances, even a solo knight can deliver checkmate. In this example of the smothered mate, black's king is in check from a knight and has no available moves, because they are trapped in the corner by their own pieces.</p>
             <p>Use of this checkmate requires the opposing king to be in the corner square and a rook or equivalent piece to be immediately next to them. This can sometimes be orchestrated using piece sacrifices. Care must be taken to ensure that your knight is ready to deliver the smothered mate, so that the loss of material is not wasted.</p>
-            <audio src="assets/audio/smothered.mp3" controls controlslist="nodownload"></audio>
+
+            <!-- Audio of the text -->
+            <audio src="assets/audio/smothered.mp3" controls controlslist="nodownload" aria-label="A voice recording of the Smothered Mate text"></audio>
+
           </div>
+
+          <!-- 'Arabian Mate' content -->
           <div>
+
             <h3 id="arabian">Arabian Mate</h3>
+
+            <!-- Image created using project's chess graphics maker,
+            Incorporates Font Awesome chess piece icons: https://fontawesome.com/search?q=chess&o=r&m=free -->
             <img src="assets/images/arabian.png" alt="Diagram of Arabian mate checkmate pattern">
+
+            <!-- Explanatory text -->
             <p>The Arabian mate is an elegant checkmate pattern employing a rook and a supporting knight. The enemy king is manoeuvred into a corner. The knight prevents the king from moving horizontally or vertically. A rook on the 7th rank or its equivalent prevents the king from moving diagonally. Note that in a real game, the opponent must have other legally mobile material remaining on the board, else this would result in a stalemate.</p>
             <p>Then, the rook is slid across to deliver checkmate from a square directly adjacent to the king. The rook is protected by the knight.</p>
-            <audio src="assets/audio/arabian.mp3" controls controlslist="nodownload"></audio>
+
+            <!-- Audio of the text -->
+            <audio src="assets/audio/arabian.mp3" controls controlslist="nodownload" aria-label="A voice recording of the Arabian Mate text"></audio>
+
           </div>
+
         </div>
         
       </section>
 
     </main>
 
+    <!-- Footer, Identical across all pages -->
     <footer>
 
-      <h4>Ready to play?</h4>
+      <!-- External links section -->
+      <section id="links-contain" aria-labelledby="play">
 
-      <div id="links-contain">
+        <h4 id="play">Ready to play?</h4>
 
         <ul id="links">
 
@@ -98,7 +147,7 @@
             <a href="https://www.chess.com/" target="_blank" rel="noopener" aria-label="Visit Chess.com (opens in a new tab)">
               <i class="fa-solid fa-chess-pawn"></i>
               <br><br>
-              <p>Chess.com</p>
+              Chess.com
             </a>
           </li>
 
@@ -112,12 +161,13 @@
 
         </ul>
 
-      </div>
+      </section>
 
     </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/8e8fccab10.js" crossorigin="anonymous"></script>
+
   </body>
 
 </html>

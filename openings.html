@@ -10,7 +10,7 @@
     <meta name="description" content="Useful information and advice for chess beginners and improvers.">
     <meta name="keywords" content="chess, learn chess, how to play chess, win at chess, chess openings, checkmate patterns, beginner, novice">
 
-    <!-- Title & Favicon -->
+    <!-- Title & Favicon, Page indicated -->
     <title>Openings - How to Win Chess</title>
     <link rel="icon" href="assets/images/favicon.ico">
 
@@ -21,80 +21,134 @@
 
   <body>
 
+    <!-- Header, Has consistency across all pages -->
     <header>
-      <!-- Site logo -->
+
+      <!-- Site logo, Links to home page -->
       <a href="index.html" aria-label="Go to the home page">
         <h1 id="logo">
+          <!-- Span to target for font sizing -->
           <span id="logo-scale">HOW TO WIN</span>
           <br>
           CHESS
         </h1>
       </a>
       
-      <!-- Main menu -->
+      <!-- Navigation menu -->
       <nav>
+
+        <!-- ID of main-menu in case of other menus being added due to increasing amounts of content -->
         <ul id="main-menu">
           <li>
             <a href="index.html" aria-label="Go to the home page">Home</a>
           </li>
           <li>
+            <!-- Current page indicated with bold text -->
             <a href="openings.html" aria-label="Go to the openings page"><strong>Openings</strong></a>
           </li>
           <li>
             <a href="checkmate.html" aria-label="Go to the checkmate page">Checkmate</a>
           </li>
         </ul>
+
       </nav>
+
     </header>
 
+    <!-- Main content area -->
     <main>
+
+      <!-- Chess openings content section, Has ID reference list for accessibility -->
       <section id="openings" aria-labelledby="op-title closed gambit zukertort">
 
+        <!-- Section header, Page introduction -->
         <header>
-          <h2 id="op-title">Chess Openings</h2>
-          <br>
-          <p>The first few moves of the game are important. A strong opening can set you up well for the rest of the game. A weak opening can put you at an immediate disadvantage.</p>
-          <br>
+
+          <h2 id="op-title">Chess Openings</h2><br>
+          
+          <p>The first few moves of the game are important. A strong opening can set you up well for the rest of the game. A weak opening can put you at an immediate disadvantage.</p><br>
+          
         </header>
 
+        <!-- Container div to target for flexbox -->
         <div id="op-contain">
+
+          <!-- 'Closed Game' content -->
           <div>
+
             <h3 id="closed">Closed Game</h3>
+            <!-- Algebraic chess notation -->
             <h4>1. d4 d5</h4>
+
+            <!-- Image created using the project's chess graphics maker,
+            Incorporates Font Awesome chess piece icons: https://fontawesome.com/search?q=chess&o=r&m=free -->
             <img src="assets/images/closed-game.png" alt="Diagram of Closed Game chess opening">
+
+            <!-- Explanatory text -->
             <p>When white's first move is d4 and black responds with d5, this is called a Closed Game. In other words, white moves the pawn in front of their queen forwards two spaces and black mirrors it.</p>
             <p>This is commonly regarded as a solid opening for both players. There is an attempt to control the center, by direct occupation with the pawn. The queen and c-file bishop have the possibility of development (that is, of moving from their starting positions). Also, the pawn has some support from the queen.</p>
             <p>In general, queen's pawn openings tend to create complex, slowed-down games with careful manoeuvring and the seeking of small positional advantages that build up to victory.</p>
-            <audio src="assets/audio/closed.mp3" controls controlslist="nodownload"></audio>
+
+            <!-- Audio of the text -->
+            <audio src="assets/audio/closed.mp3" controls controlslist="nodownload" aria-label="A voice recording of the Closed Game text"></audio>
+
           </div>
+
+          <!-- 'Queen's Gambit' content -->
           <div>
+
             <h3 id="gambit">Queen's Gambit</h3>
+            <!-- Algebraic chess notation -->
             <h4>1. d4 d5 2. c4</h4>
+
+            <!-- Image created using the project's chess graphics maker,
+            Incorporates Font Awesome chess piece icons: https://fontawesome.com/search?q=chess&o=r&m=free -->
             <img src="assets/images/queens-gambit.png" alt="Diagram of Queen's Gambit chess opening">
+
+            <!-- Explanatory text -->
             <p>A popular follow-up to the Closed Game is for white to turn it into a Queen's Gambit by moving their c-file pawn forwards two spaces, threatening black's d5 center pawn from the queenside (which is files a through d, across all 8 ranks).</p>
             <p>The main three options for black's response are <em>Queen's Gambit Accepted</em>, <em>Queen's Gambit Declined</em>, and the <em>Slav Defense</em>. Accepting the gambit means taking white's pawn with their own (2. c4 dxc4). Declining the gambit or playing the Slav Defense mean instead backing up the d5 pawn by moving a pawn in an adjacent file forwards one square (2...e6 or 2...c6, respectively).</p>
             <p>A minor advantage of c6 over e6 is that it blocks white from putting black's king in check with their next move by playing 3. Qa4+, although this attack can be easily thwarted on black's move with 3...c6, or Nc6, or Bd7 threatening white's queen.</p>
-            <audio src="assets/audio/gambit.mp3" controls controlslist="nodownload"></audio>
+
+            <!-- Audio of the text -->
+            <audio src="assets/audio/gambit.mp3" controls controlslist="nodownload" aria-label="A voice recording of the Queen's Gambit text"></audio>
+
           </div>
+
+          <!-- 'Zukertort Opening' content -->
           <div>
+
             <h3 id="zukertort">Zukertort Opening</h3>
+            <!-- Algebraic chess notation -->
             <h4>1. Nf3</h4>
+
+            <!-- Image created using the project's chess graphics maker,
+            Incorporates Font Awesome chess piece icons: https://fontawesome.com/search?q=chess&o=r&m=free -->
             <img src="assets/images/zukertort.png" alt="Diagram of Zukertort chess opening">
+
+            <!-- Explanatory text -->
             <p>Although pawn openings are far more common, the knights can also legally be granted the first move. The most popular of these options is the Zukertort Opening, where the kingside knight moves forward two squares and inward one square.</p>
             <p>This offers some early control of the center, as the knight's influence covers the squares d4 and e5. The first effect of this is that black loses the option of playing 1...e5, since it would be immediately taken by white's knight.</p>
             <p>Black often responds with 1...d5. If white then plays 2. c4, that is known as the Réti Opening. It threatens black's center pawn and clears a path for development of white's queen.</p>
-            <audio src="assets/audio/zukertort.mp3" controls controlslist="nodownload"></audio>
+
+            <!-- Audio of the text -->
+            <audio src="assets/audio/zukertort.mp3" controls controlslist="nodownload" aria-label="A voice recording of the Zukertort Opening text"></audio>
+
           </div>
+
         </div>
 
       </section>
+
     </main>
 
+    <!-- Footer, Identical across all pages -->
     <footer>
 
-      <h4>Ready to play?</h4>
+      <!-- External links section -->
+      <section id="links-contain" aria-labelledby="play">
 
-      <div id="links-contain">
+        <h4 id="play">Ready to play?</h4>
 
         <ul id="links">
 
@@ -102,7 +156,7 @@
             <a href="https://www.chess.com/" target="_blank" rel="noopener" aria-label="Visit Chess.com (opens in a new tab)">
               <i class="fa-solid fa-chess-pawn"></i>
               <br><br>
-              <p>Chess.com</p>
+              Chess.com
             </a>
           </li>
 
@@ -116,12 +170,13 @@
 
         </ul>
 
-      </div>
+      </section>
 
     </footer>
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/8e8fccab10.js" crossorigin="anonymous"></script>
+
   </body>
 
 </html>

@@ -1,6 +1,6 @@
 /* General styles */
 
-/* Remove default styles */
+/* Remove default box and link styles */
 * {
   padding: 0;
   margin: 0;
@@ -8,38 +8,47 @@
   color: black;
 }
 
+/* Remove default list styles */
 ul {
   list-style-type: none;
 }
 
+/* Body fills available viewport space */
 body {
   width: 100%;
   min-height: 100vh;
 }
 
-/* Font */
+/* Set most text to sans-serif fonts for readability,
+Leave site logo and navigation menu as serif default for aesthetic appeal */
 main,
 footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Links grow when hovered */
 a:hover {
   font-size: 1.1em;
 }
 
 /* Header */
 
+/* Only the header that is a direct child of the body */
 body > header {
+  /* Fixed in place */
   position: fixed;
   top: 0;
   width: 100%;
+  /* Layered over other content when necessary */
   z-index: 5;
   background-color: white;
+  /* Subtle visual indicator of bottom of header */
   border-bottom: 0.5px dashed lightgray;
+  /* Site logo centered */
   text-align: center;
 }
 
-/* Site logo */
+/* Site logo font sizes */
 #logo {
   font-size: 3rem;
 }
@@ -48,7 +57,7 @@ body > header {
   font-size: 1.5rem;
 }
 
-/* Main menu */
+/* Navigation menu styles */
 #main-menu {
   font-size: larger;
   display: flex;
@@ -59,32 +68,161 @@ body > header {
   max-width: 700px;
 }
 
+/* Main content area */
+
+/* First content visible below header when viewing top of page */
+main {
+  padding-top: 200px;
+}
+
+/* Site introduction section */
+
+#site-intro {
+  padding: 15px;
+  height: 490px;
+  /* Background image, Photo by Vlada Karpovich: https://www.pexels.com/photo/chess-pieces-on-the-board-6114955/ */
+  background: url("../images/pexels-vlada-karpovich-6114955.webp") center bottom / cover no-repeat;
+}
+
+#site-intro > div {
+  /* Justify introduction text */
+  text-align: justify;
+  /* Translucent white between background image and text for contrast */
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+}
+
+/* Paragraph spacings */
+#site-intro p {
+  margin-top: 5px;
+}
+
+#site-intro p:first-of-type {
+  margin-top: 10px;
+}
+
+/* Mailing list signup section */
+
+#mail-signup {
+  margin: 30px 0 15px;
+  /* Form centered */
+  text-align: center;
+}
+
+/* Form row spacings */
+form > div {
+  margin-top: 10px;
+}
+
+form > div:first-of-type {
+  margin-top: 15px;
+}
+
+input {
+  padding: 5px;
+}
+
+/* Red asterisk */
+.required {
+  color: red;
+}
+
+/* Hidden span that nudges input box to align */
+.align {
+  visibility: hidden;
+}
+
+/* Openings and Checkmate pages */
+
+/* Space between bottom of content and the footer */
+#openings,
+#checkmate {
+  padding-bottom: 20px;
+}
+
+/* Section headers centered */
+#openings header,
+#checkmate header {
+  text-align: center;
+  padding: 15px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Apply flexbox to the content divs */
+#op-contain,
+#ch-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#op-contain > div,
+#ch-contain > div {
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+/* Image size */
+img {
+  width: 300px;
+}
+
+/* Paragraphs and audio spacing */
+#openings p {
+  margin-bottom: 5px;
+}
+
+audio {
+  margin: 10px 0;
+}
+
+/* Footer */
+
+footer {
+  background-color: white;
+  width: 100%;
+  /* Space at bottom of page */
+  padding: 15px 0 30px;
+  text-align: center;
+}
+
+/* Spread-out of links constricted */
+#links-contain {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Flexbox applied to external links section */
+#links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 15px;
+}
+
+/* Size of Font Awesome icons used for links */
+footer i {
+  font-size: 2rem;
+}
+
+/* Colors of the icons */
+footer .fa-chess-pawn {
+  color: green;
+}
+
+footer .fa-chess-knight {
+  color: navy;
+}
+
+/* Media query for navigation menu,
+Min width slightly exceeds standard tablet (768px) */
 @media screen and (min-width: 800px) {
   #main-menu {
     margin: 15px auto;
   }
 }
 
-/* Main */
-
-main {
-  padding-top: 200px;
-}
-
-/* Intro on landing page */
-#site-intro {
-  padding: 15px;
-  height: 490px;
-  /* Photo by Vlada Karpovich: https://www.pexels.com/photo/chess-pieces-on-the-board-6114955/ */
-  background: url("../images/pexels-vlada-karpovich-6114955.webp") center bottom / cover no-repeat;
-}
-
-#site-intro > div {
-  text-align: justify;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 15px;
-}
-
+/* Media queries for site introduction section */
 @media screen and (min-width: 600px) {
   #site-intro > div {
     width: 80%;
@@ -105,114 +243,8 @@ main {
     margin: 90px auto 0;
   }
 
+  /* Repositions background image to avoid cutting out the knight's head */
   #site-intro {
     background-position: center 90%;
   }
-}
-
-#site-intro p {
-  margin-top: 5px;
-}
-
-#site-intro p:first-of-type {
-  margin-top: 10px;
-}
-
-/* Email signup */
-#mail-signup {
-  margin: 30px 0 15px;
-  text-align: center;
-}
-
-input {
-  padding: 5px;
-}
-
-.required {
-  color: red;
-}
-
-form > div {
-  margin-top: 10px;
-}
-
-form > div:first-of-type {
-  margin-top: 15px;
-}
-
-.align {
-  visibility: hidden;
-}
-
-/* Openings and Checkmate pages */
-
-img {
-  width: 300px;
-}
-
-#openings p {
-  margin-bottom: 5px;
-}
-
-/* Section headers */
-#openings header,
-#checkmate header {
-  text-align: center;
-  padding: 15px;
-  max-width: 780px;
-  margin: 0 auto;
-}
-
-/* Apply flexbox to main content */
-#op-contain,
-#ch-contain {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-#op-contain > div,
-#ch-contain > div {
-  width: 300px;
-  margin-bottom: 15px;
-}
-
-audio {
-  margin: 10px 0;
-}
-
-#openings,
-#checkmate {
-  padding-bottom: 20px;
-}
-
-/* Footer */
-
-footer {
-  background-color: white;
-  width: 100%;
-  padding: 15px 0 30px;
-  text-align: center;
-}
-
-#links-contain {
-  max-width: 400px;
-  margin: 15px auto 0;
-}
-
-#links {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-footer i {
-  font-size: 2rem;
-}
-
-footer .fa-chess-pawn {
-  color: green;
-}
-
-footer .fa-chess-knight {
-  color: navy;
 }
