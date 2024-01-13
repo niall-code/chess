@@ -72,13 +72,38 @@ main {
   padding: 15px;
   height: 490px;
   /* Photo by Vlada Karpovich: https://www.pexels.com/photo/chess-pieces-on-the-board-6114955/ */
-  background: url(../images/pexels-vlada-karpovich-6114955.webp) center bottom / cover no-repeat;
+  background: url("../images/pexels-vlada-karpovich-6114955.webp") center bottom / cover no-repeat;
 }
 
 #site-intro > div {
   text-align: justify;
   background-color: rgba(255, 255, 255, 0.7);
   padding: 15px;
+}
+
+@media screen and (min-width: 600px) {
+  #site-intro > div {
+    width: 80%;
+    margin: 30px auto 0;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #site-intro > div {
+    width: 60%;
+    margin: 60px auto 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #site-intro > div {
+    width: 40%;
+    margin: 90px auto 0;
+  }
+
+  #site-intro {
+    background-position: center 90%;
+  }
 }
 
 #site-intro p {
