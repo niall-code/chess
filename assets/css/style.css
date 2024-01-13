@@ -25,7 +25,7 @@ footer {
 
 /* Header */
 
-header {
+body > header {
   position: fixed;
   top: 0;
   width: 100%;
@@ -116,6 +116,28 @@ img {
 
 #openings p {
   margin-bottom: 5px;
+}
+
+/* Section headers */
+#openings header,
+#checkmate header {
+  text-align: center;
+  padding: 15px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+/* Apply flexbox to main content */
+#op-contain,
+#ch-contain {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#op-contain > div,
+#ch-contain > div {
+  width: 300px;
 }
 
 /* Footer */
