@@ -163,14 +163,22 @@ input {
   margin-bottom: 15px;
 }
 
+/* Center div headings */
+#op-contain h3,
+#op-contain h4,
+#ch-contain h3 {
+  text-align: center;
+}
+
 /* Image size */
 img {
   width: 300px;
 }
 
 /* Paragraphs and audio spacing */
-#openings p {
-  margin-bottom: 5px;
+#op-contain p,
+#ch-contain p {
+  margin-bottom: 10px;
 }
 
 audio {
