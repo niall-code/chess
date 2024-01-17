@@ -134,6 +134,13 @@ Git was used for version control and GitHub for a remote repository, as is commo
 
 The deployment of my project was straightforward. From my GitHub repository, I went to Settings, then Pages. 'Deploy from a branch' was the default for the source. For the branch, I selected 'main' (which, for this solo project, was also the only branch), and the root directory was the default for the second dropdown. I clicked Save and the project was deployed with GitHub Pages as a live website with its own URL: https://niall-code.github.io/chess/.
 
+Since my earliest deployment, I had:
+- added comments to the graphic maker files and reordered some of its CSS file's rulesets,
+- moved the graphic maker files from a shared folder to more standard positions in the directory tree based on their file types, sensibly renamed them, and altered the HTML file's path to the CSS file accordingly,
+- updated an audio file, as mentioned in the testing section,
+- written the contents of this README file,
+- and added the image assets that this file utilises.
+
 From my GitHub repository page (https://github.com/niall-code/chess), the repository can easily be forked by clicking the 'Fork' button near the top right of the screen.
 
 By clicking the green 'Code' button, again towards the top right, you could also reveal the address required to clone the repository. You would then use Git to make the clone, either with a `git clone` command followed by the address in a terminal (after navigating into an appropriate directory for the clone's destination) or alternatively by clicking a "Clone Repository" button and entering the address, in some code editors with Git integration.
