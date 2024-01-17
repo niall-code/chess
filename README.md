@@ -4,23 +4,21 @@
 
 [The deployed project can be viewed here.](https://niall-code.github.io/chess/)
 
-![responsive mockup](assets/images/readme-images/amiresponsive.png)
+Currently, the chess openings page and checkmate patterns page have a relatively limited range of chess content. Adding further content would likely be ongoing for some time.
 
-Currently, the chess openings page and checkmate patterns page have a limited range of content. Adding further content would likely be ongoing for some time.
+<img src="assets/images/readme-images/amiresponsive.png" alt="responsive mockup" width="900px">
 
 ## Features
 
 ### Navigation menu
 
-![navigation menu](assets/images/readme-images/nav-menu.png)
-
 The navigation menu is in a fixed header so that it is immediately available without scrolling up. The navigation bar can widen and narrow in response to screen size. The menu's links grow when hovered to give feedback that a mouse cursor is over it and clicking now would select it. The current page is indicated with bolder text.
 
 The site logo above also functions as a link back to the home page, as is commonly expected.
 
-### Site introduction section
+<img src="assets/images/readme-images/nav-menu.png" alt="navigation menu" width="600px">
 
-![introduction section](assets/images/readme-images/site-intro.png)
+### Site introduction section
 
 The site introduction section clarifies to the user the purpose of the website and the value it could provide. When it confirms the user's expectations or resonates with what they want, it should encourage them to continue exploring the site.
 
@@ -28,39 +26,41 @@ The introduction is set over a background image, a photo of a chess set. This gi
 
 The size and placement of the introduction can respond to screen size. Similarly, the positioning of the background image can adjust for large screens.
 
-### Mailing list signup form
+<img src="assets/images/readme-images/site-intro.png" alt="introduction section" width="350px">
 
-![form](assets/images/readme-images/form.png)
+### Mailing list signup form
 
 The home page also has a simple form which would be for the user to sign up for weekly emails containing chess advice. The email input is set as required and is marked with a red asterisk, widely recognised as indicating a required field.
 
-### External links
+<img src="assets/images/readme-images/form.png" alt="form" width="300px">
 
-![external links](assets/images/readme-images/links.png)
+### External links
 
 The footer has links to sites where chess can be played. They open in a new tab. Like the navigation menu, these links grow when hovered.
 
 Font Awesome icons are utilised. They are some of the same icons as incorporated in the chessboard diagrams (discussed below). They also have some resemblance to logos of the corresponding sites, especially with the pawn icon being styled green.
 
+<img src="assets/images/readme-images/links.png" alt="external links" width="300px">
+
 ### Chessboard diagrams
 
-![chess diagram](assets/images/queens-gambit.png)
+<img src="assets/images/queens-gambit.png" alt="chess diagram" width="300px">
 
 #### The 'Chess Graphic Maker'
 
-![alt text]()
-
 It is intended to be opened and utilised from within a code editor.
 
-### Audio of text
+<img src="assets/images/readme-images/making-diagrams.png" alt="chess graphic maker" width="1000px">
 
-![audio bar](assets/images/readme-images/audio-feature.png)
+### Audio of text
 
 Voice recordings of the explanatory textual content about the opening positions and checkmate patterns are provided. This gives site users the options of listening to the paragraphs instead of reading them or listening and reading along at the same time.
 
 The placement of the audio bar immediately below the paragraphs makes it intuitive that it would be audio of the text. However, an aria-label attribute is included to ensure that its purpose is also clear to those who rely on screen readers.
 
 If the site user is unfamiliar with standard algebraic chess notation, the audio would also help them understand and learn it. For example, the text "Qa4+" is spoken as "queen to a4, check". This allows them to pick it up in a natural manner.
+
+<img src="assets/images/readme-images/audio-feature.png" alt="audio bar" width="300px">
 
 ### Favicon
 
@@ -88,7 +88,7 @@ If the site user is unfamiliar with standard algebraic chess notation, the audio
 
 ## Testing
 
-![Google Lighthouse stats](assets/images/readme-images/lighthouse.png)
+<img src="assets/images/readme-images/lighthouse.png" alt="Google Lighthouse stats" width="350px">
 
 ### Bugs
 
