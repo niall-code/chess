@@ -124,6 +124,10 @@ I used Google dev tools' Lighthouse feature to test statistics for each of my th
 
 <img src="assets/images/readme-images/lighthouse.png" alt="Google Lighthouse stats" width="350px">
 
+## Gitignore
+
+My .gitignore file is currently empty because there are no automatically generated or sensitive files in the directory tree which require an ignore instruction. However, the .gitignore is present anyway as good practice, in case of being needed in the future.
+
 ## Deployment
 
 Git was used for version control and GitHub for a remote repository, as is common practice.
